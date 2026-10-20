@@ -68,10 +68,7 @@ K106a34920e459390b299850fe5607e9280aea33c85c792ce0fe63b27595f1144a8::server:ea01
 
 
 <h2> Comanda pentru Cluster </h2>
-curl -sfL https://get.k3s.io | \
-K3S_URL = https://10.32.3.97:6443 \
-K3S_TOKEN="K106a34920e459390b299850fe5607e9280aea33c85c792ce0fe63b27595f1144a8::server:ea012671d97888c8c48c1b1f1525f3b4"\
-sh -
+curl -sfL https://get.k3s.io | K3S_URL="https://192.168.1.101:6443" K3S_TOKEN="TOKENUL_TAU" sh -
 
 <h2> Verificam conectarea </h2>
 sudo k3s kubectl get nodes -o wide
