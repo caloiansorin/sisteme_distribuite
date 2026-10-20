@@ -72,3 +72,9 @@ curl -sfL https://get.k3s.io | K3S_URL="https://192.168.1.101:6443" K3S_TOKEN="T
 
 <h2> Verificam conectarea </h2>
 sudo k3s kubectl get nodes -o wide
+
+
+<h3> Master </h3>
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=6443 connectaddress=10.32.3.97 connectport=6443
+<br>
+New-NetFirewallRule -DisplayName "K3s API 6443" -Direction Inbound -Protocol TCP -LocalPort 6443 -Action Allow
