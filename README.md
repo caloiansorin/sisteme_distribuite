@@ -62,64 +62,13 @@ docker run -d \
   apache-video:v1
 
 
-Command explanation:
-
-Option	Description
--d	Runs the container in the background
---name apache-video	Assigns a name to the container
--p 8080:80	Maps host port 8080 to container port 80
-apache-video:v1	Specifies the Docker image and tag
-🌐 Access the Application
-
-Once the container is running, open your browser:
-
-<p align="center">
-<a href="http://localhost:8080">
-<img src="https://img.shields.io/badge/OPEN-APACHE%20VIDEO%20SERVER-2ea44f?style=for-the-badge" alt="Open Apache Video Server">
-</a>
-</p>
-
-URL: http://localhost:8080
-
-🔍 Useful Docker Commands
-Command	Description
-docker ps	Display running containers
-docker ps -a	Display all containers
-docker images	List available images
-docker logs apache-video	Display container logs
-docker stop apache-video	Stop the container
-docker start apache-video	Start the container
-docker rm -f apache-video	Remove the container
-🧰 Troubleshooting
-Container is not running
-docker ps -a
-docker logs apache-video
-
-Container name is already in use
-docker rm -f apache-video
-
-
-Then execute the docker run command again.
-
-Application is not accessible
-Verify that the container is running.
-Ensure port 8080 is not being used by another application.
-Check the container logs for errors.
-Make sure Docker is running and properly integrated with WSL.
-📁 Project Structure
-sisteme_distribuite/
-├── README.md
-└── apache-video.tar
-
-
-Note: The project structure is illustrative. The Docker image archive must be available locally.
-
-<div align="center">
-<sub>📚 Course: Sisteme Distribuite</sub>
-<br>
-<sub>🐳 Technologies: Ubuntu · WSL · Docker · Apache</sub>
-</div>
-
 token:
 <br>
 K106a34920e459390b299850fe5607e9280aea33c85c792ce0fe63b27595f1144a8::server:ea012671d97888c8c48c1b1f1525f3b4
+
+
+<h2> Comanda pentru Cluster </h2>
+curl -sfL https://get.k3s.io | \
+K3S_URL = https://IP_PC1:6443 \
+K3S_TOKEN="K106a34920e459390b299850fe5607e9280aea33c85c792ce0fe63b27595f1144a8::server:ea012671d97888c8c48c1b1f1525f3b4"\
+sh -
