@@ -119,3 +119,7 @@ Note: The project structure is illustrative. The Docker image archive must be av
 <br>
 <sub>🐳 Technologies: Ubuntu · WSL · Docker · Apache</sub>
 </div>
+
+token:
+<br>
+K106a34920e459390b299850fe5607e9280aea33c85c792ce0fe63b27595f1144a8::server:ea012671d97888c8c48c1b1f1525f3b4
